@@ -1,0 +1,24 @@
+<ion-view title="首页">
+	<!--主体-->
+	<ion-content>
+		<!--下拉刷新-->
+	    <ion-refresher
+	   		pulling-text="释放立即刷新"
+	    	on-refresh="doRefresh()" refreshing-icon="ion-load-a" refreshing-text="刷新成功~">
+	 	</ion-refresher>
+	 	
+	 	<!--轮播图-->
+	 	<ion-slide-box does-continue="true" slide-interval="3000" class="lunboStyle" auto-play="true">
+		  <ion-slide>
+		    <div class="box"><img src="img/activity_02.png"/></div>
+		  </ion-slide>
+		  <ion-slide>
+		    <div class="box"><img src="img/activity_02.png"/></div>
+		  </ion-slide>
+		  <ion-slide>
+		    <div class="box"><img src="img/activity_02.png"/></div>
+		  </ion-slide>
+		</ion-slide-box>
+		
+	</ion-content>
+ </ion-view>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="Keywords" content=""/>
+		<meta name="Description" content=""/>
+		<title>三益宝</title>		
+		<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/ionic/1.3.2/css/ionic.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/page.css"/>
+		<script src="https://cdn.bootcss.com/ionic/1.3.2/js/ionic.bundle.js"></script>
+	</head>
+	<body class="S_sanyibao">
+		<div ng-app="sanyibao" ng-controller="main">
+			<ion-nav-bar class="bar-energized">	
+				 <ion-nav-back-button class="button-clear">
+				    <!--<i class="ion-arrow-left-c"></i> 后退-->
+				    {{}}
+				  </ion-nav-back-button>
+			</ion-nav-bar>
+			<ion-nav-view>
+				
+			</ion-nav-view>
+		</div>
+		<script>
+			var m1 = angular.module("sanyibao",["ionic"]);
+			//初始化配置路由
+			m1.config(["$stateProvider",function($stateProvider){
+				$stateProvider.state("shouye",{
+					url:"/index",
+					templateUrl:"html/shouye.html"					
+				})
+			}])
+			//初始化控制器
+			m1.controller("main",["$scope","$state","$http",function($scope,$state,$http){
+				$state.go("shouye");	
+//				$scope.lunboStyle={
+//					"height":"200px"
+//				}
+			}])
+		</script>
+	</body>
+</html>
