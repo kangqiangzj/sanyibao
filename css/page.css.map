@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACI,uBAAW,GACP,MAAM,EAAE,KAAK;AACb,4BAAI,GACJ,KAAK,EAAE,IAAI,EACX,MAAM,EAAE,KAAK;AACb,gCAAG,GACC,KAAK,EAAE,IAAI,EACX,MAAM,EAAE,KAAK",
-"sources": ["../sass/page.scss"],
-"names": [],
-"file": "page.css"
-}

@@ -35,9 +35,9 @@
 			//初始化控制器
 			m1.controller("main",["$scope","$state","$http",function($scope,$state,$http){
 				$state.go("shouye");	
-//				$scope.lunboStyle={
-//					"height":"200px"
-//				}
+				$scope.doRefresh = function(){
+					$scope.$broadcast('scroll.refreshComplete');
+				}
 			}])
 		</script>
 	</body>
