@@ -1,5 +1,13 @@
-.S_sanyibao .lunboStyle { height: 200px; }
-.S_sanyibao .lunboStyle .box { width: 100%; height: 200px; }
-.S_sanyibao .lunboStyle .box img { width: 100%; height: 200px; }
+.S_sanyibao .lunboStyle {
+  height: 200px; }
+  .S_sanyibao .lunboStyle .box {
+    width: 100%;
+    height: 200px; }
+    .S_sanyibao .lunboStyle .box img {
+      width: 100%;
+      height: 200px; }
 
-/*# sourceMappingURL=page.css.map */
+.demo {
+  background: red; }
+  .demo h2 {
+    background-color: green; }
