@@ -6,15 +6,17 @@
 		<meta name="Keywords" content=""/>
 		<meta name="Description" content=""/>
 		<title>三益宝</title>		
-		<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/ionic/1.3.2/css/ionic.min.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/ionic/1.3.2/css/ionic.min.css"/>		
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/page.css"/>
-		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
 		<script src="https://cdn.bootcss.com/ionic/1.3.2/js/ionic.bundle.js"></script>
+		<script src="js/index.js"></script>
 	</head>
 	<body class="S_sanyibao">
 		<div ng-app="sanyibao" ng-controller="main">
-			<ion-nav-bar class="bar-energized">	
+			<ion-nav-bar class="header">	
 				 <ion-nav-back-button class="button-clear">
 				    <!--<i class="ion-arrow-left-c"></i> 后退-->
 				    {{}}
@@ -23,23 +25,33 @@
 			<ion-nav-view>
 				
 			</ion-nav-view>
+			<!--footer-->
+			<ion-footer-bar class="footer">
+				<div class="tabs tabs-icon-top footer">
+				  <a class="tab-item active" href="#/shouye">
+				    <i class="icon iconfont icon-shouye"></i>
+				          首页
+				  </a>
+				  <a class="tab-item" href="#/xiangmu">
+				    <i class="icon iconfont icon-icon_xiangmu"></i>
+				          项目
+				  </a>
+				  <a class="tab-item" href="#/detail1">
+				    <i class="icon iconfont icon-faxian"></i>
+				          发现
+				  </a>
+				  <a class="tab-item">
+				    <i class="icon iconfont icon-xiazai"></i>
+				  		     我的
+				  </a>
+				</div>
+			</ion-footer-bar>
 		</div>
-		<script>
-			var m1 = angular.module("sanyibao",["ionic"]);
-			//初始化配置路由
-			m1.config(["$stateProvider",function($stateProvider){
-				$stateProvider.state("shouye",{
-					url:"/index",
-					templateUrl:"html/shouye.html"					
-				})
-			}])
-			//初始化控制器
-			m1.controller("main",["$scope","$state","$http",function($scope,$state,$http){
-				$state.go("shouye");	
-				$scope.doRefresh = function(){
-					$scope.$broadcast('scroll.refreshComplete');
-				}
-			}])
-		</script>
+		<!--<script src="js/swiper.min.js"></script>
+		<script type="text/javascript">
+			var lunbo1 = new Swiper("#contain",{
+				slidesPerView:3
+			})
+		</script>-->
 	</body>
 </html>

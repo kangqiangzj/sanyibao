@@ -1,4 +1,9 @@
-<ion-view title="首页">
+<ion-view title="首页" class="C_shouye">
+	<ion-nav-buttons side="right">
+      <button class="button top-left" ng-click="doSomething()">
+    	  
+      </button>
+    </ion-nav-buttons>
 	<!--主体-->
 	<ion-content class="main">
 		<!--下拉刷新-->
@@ -19,27 +24,88 @@
 		    <div class="box"><img src="img/lunbo/lunbo2.jpg"/></div>
 		  </ion-slide>
 		</ion-slide-box>
+		
+		<!--daohang-->
+		<section class="nav">
+			<a href="#">
+				<i></i>
+				平台介绍
+			</a>
+			<a href="#">
+				<i></i>
+				安全合规
+			</a>
+			<a href="#">
+				<i></i>
+				热门活动
+			</a>
+			<a href="#">
+				<i></i>
+				新手指引
+			</a>
+		</section>
+		
+		<section class="yaoqing">
+			<a href="#">
+				
+			</a>
+		</section>
+		<!--资讯-->
+		<section class="news">
+			<p><a href="#">关于乐商贷关于乐商贷关于乐商贷【LSD20180111-03】项目流标的说明</a></p>
+		</section>
+		<!--新手-->
+		<section class="newhand">
+			<div id="newbar">
+				
+			</div>
+			<div class="percent">
+				<h1>13.50<span>%</span></h1>
+			</div>
+			<p>预期年化收益率</p>
+			<p class="time">
+				<span class="qixan">期限12个月</span>
+				<span class="guimo">规模15万</span>
+			</p>
+			<a href="#" class="stfx"></a>
+		</section>
+		<section class="xiangmu">
+			<div class="xiangmu_head">
+				<h3 class="left">推荐项目</h3>
+				<h4 class="right"><a href="#">2个待投项目</a></h4>
+			</div>
+			<!--项目--> 
+			<div class="prod" ng-repeat="data in datas track by $index">
+				<a href="#/detail1/{{data.id}}" class="boxx">
+				<div class="left">
+					<h2>{{data.shouyi}}<span>%</span></h2>
+					<p>预期年化收益率</p>
+				</div>
+				<div class="right">
+					<h1>{{data.name}}</h1>
+					<div class="qixian">
+						<span class="sp1">期限12个月</span>
+						<span class="sp2">即将开始</span>
+					</div>
+				</div>
+				</a>
+			</div>
+		</section>
+		
+		<!--信息展示-->
+		<section class="xinxishow">
+			<a href="#" class="new"></a>
+			<a href="" class="pintai"></a>
+		</section>
+		<section class="guifan">
+			
+		</section>
+		<!--底部提示消息-->
+		<section class="dibu">
+			
+		</section>
+		 
 	</ion-content>
 	
-	<!--footer-->
-	<ion-footer-bar class="footer">
-		<div class="tabs tabs-icon-top footer">
-		  <a class="tab-item">
-		    <i class="icon iconfont icon-shouye"></i>
-		          首页
-		  </a>
-		  <a class="tab-item">
-		    <i class="icon iconfont icon-icon_xiangmu"></i>
-		          项目
-		  </a>
-		  <a class="tab-item">
-		    <i class="icon iconfont icon-faxian"></i>
-		          发现
-		  </a>
-		  <a class="tab-item">
-		    <i class="icon iconfont icon-xiazai"></i>
-		  	我的
-		  </a>
-		</div>
-	</ion-footer-bar>
  </ion-view>
+ 

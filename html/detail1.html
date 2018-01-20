@@ -1,0 +1,70 @@
+<ion-view title="乐商贷【LSD20180119-07】" class="C_detail1">	
+	<ion-content> 
+		<section class="shouyi">
+			<div class="top">
+				<div class="left">
+					<p class="title">预期年化收益率</p>
+					<h2 class="percent">{{data.shouyi}}<span>%</span></h2>
+				</div>
+				<div class="right">
+					<div class="qixian">
+						<p class="qixian_p1">项目期限</p>
+						<h2 class="qixian_h2">{{data.qixian}}<span>个月</span></h2>
+					</div>
+					<div class="ketou">
+						<p class="ketou_p1">可投金额</p>
+						<h2 class="ketou_h2">{{data.minmoney}}<span>元</span></h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="xiangmu_detail">
+			<ul>
+				<li><a href="#" style="color: black;">项目概述</a></li>
+				<li><a href="#" style="color: black;">借款用途</a></li>
+				<li><a href="#" style="color: black;">风控措施</a></li>
+				<li><a href="#" style="color: black;">投资记录</a></li>
+			</ul>
+			<div class="main">
+				<h2>项目介绍</h2>
+				<table border="" cellspacing="3" cellpadding="4">
+					<tr>
+						<td>项目名称</td>
+						<td>{{data.name}}</td>
+					</tr>
+					<tr>
+						<td>起投金额</td>
+						<td>{{data.minmoney}}</td>
+					</tr>
+					<tr>
+						<td>投资期限</td>
+						<td>{{data.qixian}}<span>个月</span></td>
+					</tr>
+					<tr>
+						<td>还款方式</td>
+						<td>{{data.hkway}}</td>
+					</tr>
+					<tr>
+						<td>开放购买时间</td>
+						<td>{{data.buytime}}</td>
+					</tr>
+				</table>
+				<h2>项目概述</h2>
+				<div class="gaishu">
+					{{data.gaishu}}
+				</div>
+				<h2>项目图片</h2>
+				<div class="pic">
+					<ul>
+						<li><img src="{{data.imgs[0]}}"/></li>
+						<li><img src="{{data.imgs[1]}}"/></li>
+						<li><img src="{{data.imgs[2]}}"/></li>
+						<li><img src="{{data.imgs[3]}}"/></li>
+						<li><img src="{{data.imgs[4]}}"/></li>
+						<li><img src="{{data.imgs[5]}}"/></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</ion-content> 
+</ion-view>
