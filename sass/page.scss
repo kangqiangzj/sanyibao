@@ -504,5 +504,51 @@
             }
         }
     }
+   
 }
 
+ .S_login{
+        .login_yemian{
+        .main{
+            width: 100%;
+            margin-top:2.4375rem;
+//          background: red;
+            height: 15.208333rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            div{
+                margin-top: 0.875rem;
+                width: 89.33%;
+                height: 3.291666rem;
+                input{
+                    padding-left:0.816666rem;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    background: url(../img/wode/kuang.png) no-repeat center center;
+                    background-size:100%;
+                    font-size: 0.833333rem;
+                }
+            }
+            .username{
+                
+            }
+            #login,#register{
+                text-align: center;
+                line-height: 3.291666rem;
+                background-color:#b4292e;
+                border-radius: 0.416666rem;
+                color: white;
+            }
+            .pic{
+                margin-top:1.125rem;
+                width: 89.33%;
+                height: 2.083333rem;
+                background: url(../img/wode/bot.png) no-repeat center center;
+                background-size:100%;
+            }
+        }
+    }
+    }

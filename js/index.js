@@ -12,11 +12,22 @@ var m1 = angular.module("sanyibao",["ionic"]);
 			url:"/detail1/:id",
 			templateUrl:"html/detail1.html",
 			controller:"detail1"
+		}).state("login",{
+			url:"/login",
+			templateUrl:"html/login.html",
+			controller:"login"
 		})
 	}])
 			//初始化控制器
 	m1.controller("main",["$scope","$rootScope","$state","$http",function($scope,$rootScope,$state,$http){
 		$state.go("shouye");
+		$http({
+			method:"get",
+			url:"mock/detail.json",
+		}).success(function(data){
+			console.log(data.datas);
+			$scope.datas = data.datas
+		});
 		$scope.doRefresh = function(){
 			$http({
 			method:"get",
@@ -59,4 +70,7 @@ var m1 = angular.module("sanyibao",["ionic"]);
 		});
 		
 	}])
-	
+	m1.controller("login",["$scope","$stateParams","$http",function($scope,$stateParams,$http){
+		
+		
+	}])
