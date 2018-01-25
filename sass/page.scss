@@ -14,18 +14,6 @@
             background: url(../img/icons/home_kefu_black_icon.png) no-repeat center center;
             background-size:130%;
         } 
-//      .detail_top_left{
-//          border: none;
-//           background: url(../img/icons/image_share_small.png.png) no-repeat center center;
-//          background-size:130%;
-//      }
-//      .detail_top_right{
-//          margin-right: 0.625rem;
-//          border: none;  
-//         
-//          background: url(../img/icons/jpush_ic_richpush_actionbar_back.png) no-repeat center center;
-//          background-size:130%;
-//      }
     }
     .lunboStyle{
         height: 12.5rem;
@@ -122,7 +110,7 @@
         text-align: center;      
         #newbar{
             position: absolute;
-            left:7.45rem;           
+            left:8.45rem;           
             width: 8.1875rem;
             height: 2.25rem;
             background: url(../img/icons/home_novice_exclusive_icon.png) no-repeat center center;
@@ -507,10 +495,10 @@
    
 }
 
- .S_login{
-        .login_yemian{
+ .S_login,.S_register{
+        .login_yemian,.register_yemian{
         .main{
-            width: 100%;
+            width:100%;
             margin-top:2.4375rem;
 //          background: red;
             height: 15.208333rem;
@@ -527,7 +515,9 @@
                     width: 100%;
                     height: 100%;
                     border: none;
-                    background: url(../img/wode/kuang.png) no-repeat center center;
+                    background:#f3f5f7;
+                    border-radius: 0.6125rem;
+//                  background: url(../img/wode/kuang.png) no-repeat center center;
                     background-size:100%;
                     font-size: 0.833333rem;
                 }
@@ -542,13 +532,264 @@
                 border-radius: 0.416666rem;
                 color: white;
             }
-            .pic{
-                margin-top:1.125rem;
-                width: 89.33%;
-                height: 2.083333rem;
-                background: url(../img/wode/bot.png) no-repeat center center;
-                background-size:100%;
+            .quzhuce{
+                
             }
         }
     }
     }
+    .S_wode{
+        .self{
+            width: 100%;
+            height: 6.25rem;
+//          background: pink;
+            #yonghu{
+                width: 100%;
+                height:  6.25rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    color: white;
+                    width: 4.166666rem;
+                    display: block;
+                    height: 2.125rem;
+                    text-align: center;
+                    background-color: #ff4234;
+                    line-height: 2.125rem;
+                    margin-left: 1.041666rem;
+                    border-radius: 0.416666rem;
+                }
+            }
+            #yonghu_active{
+                width: 100%;
+                height:  6.25rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span{
+                    color: orange;
+                    width: 5.166666rem;
+                    display: block;
+                    height: 2.125rem;
+                    text-align: center;
+//                  background-color: #ff4234;
+                    line-height: 2.125rem;
+//                  margin-left: 1.041666rem;
+//                  border-radius: 0.416666rem;
+                }
+            }
+        }
+        .pic_main{
+            width: 100%;
+            .pic{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .removelogin{
+            margin-top: 1.041666rem;
+            width: 100%;
+            height: 3.125rem;
+            display: flex;
+            justify-content: center;
+           a{
+                 display: block;
+                background: #ff4234;
+                width: 90%;
+                color: white;
+                text-align: center;
+                line-height: 3.125rem;
+                height: 3.125rem;
+                border-radius: 0.433333rem;
+           }
+            
+        }
+    }
+    .S_faxian{
+        .lunbos{
+            height: 7.895833rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .faxian_nav{
+            background: white;
+        width: 100%;
+        height: 5.458333rem;
+        display: flex;
+        a{
+            display: block;
+            width: 25%;
+            height: 100%;
+            text-align: center;
+            font-size: 0.791666rem;
+            color:#868686;
+            i{
+                display: block;
+                height: 4.166666rem;               
+            }
+            &:nth-child(1){
+                i{
+                    background: url(../img/icons/find_help_center_icon.png) no-repeat center center;
+                    background-size:40%;
+                }
+            }
+            &:nth-child(2){
+                i{
+                    background: url(../img/icons/find_pingtai_notice_icon.png) no-repeat center center;
+                    background-size:40%;
+                }
+            }
+            &:nth-child(3){
+                i{
+                    background: url(../img/icons/find_mtbd_icon.png) no-repeat center center;
+                    background-size:40%;
+                }
+            }
+            &:nth-child(4){
+                i{
+                    background: url(../img/icons/find_about_wx_icon.png) no-repeat center center;
+                    background-size:40%;
+                }
+            }
+        }
+        }
+        .licai{
+            margin-top: 0.416666rem;
+            width: 100%;
+            height: 3.333333rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+        .newss{
+            width: 100%;
+            height: 7.979166rem;
+            display: flex;
+            background: white;
+            .news_left{
+                width: 57.3%;
+                height: 100%;
+//              background: yellow;
+                padding: 0.6875rem;
+                display: flex;
+                flex-direction:column;
+                justify-content: space-between;
+                h3{
+                    font-size: 0.958333rem;
+                    height: 1.85rem;
+                    line-height: 1.85rem;
+                }
+                .bottom{
+                    height: 1.5625rem;
+                    width: 100%;
+//                  background: pink;
+                    line-height: 1.5625rem;
+                    display: flex;
+                    .bottom_left{
+                        width: 45%;
+                        
+                    }
+                    .bottom_right{
+                        width:55%;
+                        .dianzan{
+                            padding: 0 1.105rem;
+                            background: url(../img/icons/find_zan_white_icon.png) no-repeat left center;
+                            background-size:40% ;
+                        }
+                        .liulan{
+                            padding:0 1.105rem;
+                            background: url(../img/icons/find_has_see_icon.png) no-repeat left center;
+                            background-size:30% ;
+                        }
+                    }
+                }
+            }
+            .newss_a{
+                display: block;
+                 width: 42.7%;
+                height: 100%;
+            .news_right{
+                width: 100%;
+                height: 100%;
+//              background: pink;
+                padding:0.6875rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            }
+        }
+        
+    }
+.licai_h{
+     width: 100%;
+     height: 8.304166rem;
+//   background: pink;
+     .top{
+         height: 4.916666rem;
+         
+         width: 100%;
+         padding: 0 0.816666rem;
+         h3{
+            height: 2.25rem; 
+            line-height:2.25rem;
+            font-size: 1.154166rem;
+         }
+     }
+     .bottom{
+         padding: 0 0.816666rem;
+         width: 100%;
+         height: 3.354166rem;
+         line-height:3.354166rem;
+         display: flex;
+         color: #999999;
+         font-size: 0.916666rem;
+         .left{
+            width: 70%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            height: 3.354166rem;
+            line-height:3.354166rem;
+            .date0{
+                width: 30%;
+            }
+            .author{
+                width: 50%;
+            }
+         }
+         .right{
+             width: 30%;
+              .dianzan{
+                    padding: 0 1.105rem;
+                    background: url(../img/icons/find_zan_white_icon.png) no-repeat left center;
+                    background-size:40% ;
+                }
+                .liulan{
+                    padding:0 1.105rem;
+                    background: url(../img/icons/find_has_see_icon.png) no-repeat left center;
+                    background-size:30% ;
+                }
+         }
+     }
+ }
+ .pic_main{
+     width: 100%;
+     padding: 0 0.816666rem;
+     img{
+         width: 100%;
+     }
+ }
+.qiantao{
+    .box.ng-enter{transform: translate3D(100%,0,0);}
+    .box.ng-enter-active{transform: translate3D(0,0,0);}
+    .box.ng-leave{display: none;}
+}

@@ -1,0 +1,74 @@
+<ion-view title="发现" class="S_faxian">
+	<ion-nav-buttons side="right">
+      <button class="button top-left" ng-click="doSomething()">
+    	  
+      </button>
+    </ion-nav-buttons>
+	<ion-content style="background:#eff3f6;">
+		<!--下拉刷新-->
+	    <ion-refresher
+	   		pulling-text="释放立即刷新"
+	    	on-refresh="doRefresh()" refreshing-icon="ion-load-a" refreshing-text="刷新成功~">
+	 	</ion-refresher>
+		<!--轮播图-->
+	 	<ion-slide-box does-continue="true" slide-interval="3000" class="lunbos" auto-play="true">
+		  <ion-slide>
+		    <div class="box"><img src="img/lunbo/lunbos.jpg"/></div>
+		  </ion-slide>
+		  <ion-slide>
+		    <div class="box"><img src="img/lunbo/lunbo2s.jpg"/></div>
+		  </ion-slide>
+		  <ion-slide>
+		    <div class="box"><img src="img/lunbo/lunbo3s.jpg"/></div>
+		  </ion-slide>
+		</ion-slide-box>
+		<!--daohang-->
+		<section class="faxian_nav">
+			<a href="#">
+				<i></i>
+				平台介绍
+			</a>
+			<a href="#">
+				<i></i>
+				安全合规
+			</a>
+			<a href="#">
+				<i></i>
+				热门活动
+			</a>
+			<a href="#">
+				<i></i>
+				新手指引
+			</a>
+		</section>
+		<!--理财圈-->
+		<section class="licai">
+			<img src="img/icons/licai.png"/>
+		</section>
+		
+		<section class="newss" ng-repeat="data in datas track by $index">
+			<div class="news_left">
+				
+				<div class="top">
+					<h3>{{data.title}}</h3>
+				</div>
+				<div class="bottom" style="color: #9a9a9a;">
+					<div class="bottom_left">
+						<span class="riqi">{{data.date}}</span>
+						<span class="shijian">{{data.time}}</span>
+					</div>
+					<div class="bottom_right">
+						<span class="dianzan" ng-click="dianzan()">{{data.zan}}</span>
+						<span class="liulan">{{data.liulan}}</span>
+					</div>
+				</div>
+			</div>
+			<a class="newss_a" href="#/faxian_detail/{{data.id}}">
+			<div class="news_right">
+				<img src="{{data.img}}"/>
+			</div>
+			</a>
+		</section>
+		
+	</ion-content>
+</ion-view>

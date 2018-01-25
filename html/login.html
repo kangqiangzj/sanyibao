@@ -3,13 +3,15 @@
 		<div class="login_yemian">		
 			<div class="main">
 				<div class="uername">
-					<input type="text" placeholder="请输入用户名" id="login_username"/>
+					<input type="text" placeholder="请输入用户名" id="login_username" ng-model="data.loginuser"/>
 				</div>
 				<div class="password">
-					<input type="password" placeholder="请输入密码" id="login_password"/>
+					<input type="password" placeholder="请输入密码" id="login_password" ng-model="data.loginpwd"/>
 				</div>
-				<div id="login">登录</div>
-				<div class="pic"></div>
+				<div id="login" ng-click="_login()">登录</div>
+				<div class="quzhuce">
+					<span>没有账号？</span><a href="#/register" class="right">立即注册</a>
+				</div>
 			</div>
 		</div>
 	</ion-content> 

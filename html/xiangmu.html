@@ -1,35 +1,18 @@
-<ion-view title="直投" class="C_zhitou">
+<ion-view title="项目" class="C_zhitou">
 	<ion-content class="zhitou_main">
 		<!--下拉刷新-->
 	    <ion-refresher
 	   		pulling-text="释放立即刷新"
 	    	on-refresh="doRefresh()" refreshing-icon="ion-load-a" refreshing-text="刷新成功~">
 	 	</ion-refresher>
-		<section class="xiangmu1" ng-repeat="data in datas track by $index">
-			<a href="#/detail1/{{data.id}}">
-			<div class="title">
-				<h3>{{data.name}}</h3>
-			</div>
-			<div class="detail">
-				<div class="detail_left">
-					<p class="per">{{data.shouyi}}<span>%</span></p>
-					<p class="p2" style="color:black">预期年化收益率</p>
-				</div>
-				<div class="detail_right">
-					<p class="p1">
-						<span style="color:black">{{data.qixian}}<span>个月</span></span>
-						<span class="ertian">明天投资</span>
-					</p>
-					<p class="jindu"></p>
-					<p class="qian" style="color:black">{{data.minmoney}}<span>元</span></p>
-				</div>
-			</div>
-			</a>
-		</section>
-		<!--<ion-infinite-scroll
-		    on-infinite="loadMore()"
-		    distance="1%">
-		</ion-infinite-scroll>-->
+	 	
+	 	<section class="daohang" style="width: 100%; height: 2.083333rem; background:#ccc;line-height: 2.083333rem;">
+	 		<span class="daohang_left" style="padding: 0.525rem;  text-decoration: underline;" ng-click="to_zhitou()">直投</span>
+	 		<span class="daohang_right" style="padding: 0.525rem; text-decoration: underline;" ng-click="to_zhaiquan()">债权</span>
+	 	</section>
+	 	<div ng-class="{qiantao:true}" ui-view>
+	 		
+	 	</div>
 	</ion-content> 
 	
 </ion-view>

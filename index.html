@@ -10,16 +10,17 @@
 		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/page.css"/>
-		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>		
 		<script src="https://cdn.bootcss.com/ionic/1.3.2/js/ionic.bundle.js"></script>
+		<!--<script src="https://cdn.bootcss.com/angular.js/1.3.2/angular-animate.min.js"></script>-->
 		<script src="js/index.js"></script>
 	</head>
 	<body class="S_sanyibao">
 		<div ng-app="sanyibao" ng-controller="main">
-			<ion-nav-bar class="header">	
-				 <ion-nav-back-button class="button-clear">
-				    <!--<i class="ion-arrow-left-c"></i> 后退-->
-				    {{}}
+			<ion-nav-bar class="header bar-assertive">	
+				  <ion-nav-back-button class="button-clear" style="color: black; font-size: 0.866666rem;">
+				     <i class="ion-chevron-left"></i>
+				     <!--{{}}-->
 				  </ion-nav-back-button>
 			</ion-nav-bar>
 			<ion-nav-view>
@@ -36,13 +37,13 @@
 				    <i class="icon iconfont icon-icon_xiangmu"></i>
 				          项目
 				  </a>
-				  <a class="tab-item" href="#/detail1">
+				  <a class="tab-item" href="#/faxian">
 				    <i class="icon iconfont icon-faxian"></i>
 				          发现
 				  </a>
-				  <a class="tab-item" href="#/login">
+				  <a class="tab-item" href="#/wode">
 				    <i class="icon iconfont icon-xiazai"></i>
-				  		     我的
+				  		    我的
 				  </a>
 				</div>
 			</ion-footer-bar>

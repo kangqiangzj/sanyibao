@@ -1,0 +1,21 @@
+<ion-view title="我的账户" class="S_wode">
+	<ion-content>
+		<section class="self" >
+			<div id="yonghu" ng-show="isShow1">
+				<a href="#/login">登录</a>
+				<a href="#/register">注册</a>
+			</div>
+			<div id="yonghu_active" ng-show="isShow2">
+				<span class="wel">欢迎：</span><span class="name" ng-bind="username"></span>
+			</div>			
+		</section>
+		<section class="pic_main">
+			<div class="pic">
+				<img src="img/icons/pic.png"/>
+			</div>
+		</section>
+		<section class="removelogin" ng-click='removelogin()' ng-show="isShow3">
+			<a href="#/login">注销用户</a>
+		</section>
+	</ion-content>
+</ion-view>	

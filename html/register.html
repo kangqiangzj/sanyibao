@@ -1,0 +1,19 @@
+<ion-view title="注册" class="S_register">	
+	<ion-content>
+		<div class="register_yemian">
+			<div class="main">
+				<div class="uername">
+					<input type="text" placeholder="请输入用户名" id="register_username" ng-model="data.reguser"/>
+				</div>
+				<div class="password">
+					<input type="password" placeholder="请输入密码" id="register_password" ng-model="data.regpsw"/>
+				</div>
+				<div class="repassword">
+					<input type="password" placeholder="请确认密码" id="repassword" ng-model="data.regrepsw"/>
+				</div>
+				<div id="register" ng-click="_register()">注册</div>
+				<!--<div class="pic"></div>-->
+			</div>
+		</div>
+	</ion-content> 
+</ion-view>

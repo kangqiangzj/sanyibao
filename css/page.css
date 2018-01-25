@@ -88,7 +88,7 @@
   text-align: center; }
   .S_sanyibao .newhand #newbar {
     position: absolute;
-    left: 7.45rem;
+    left: 8.45rem;
     width: 8.1875rem;
     height: 2.25rem;
     background: url(../img/icons/home_novice_exclusive_icon.png) no-repeat center center;
@@ -383,3 +383,230 @@
           .S_sanyibao .C_detail1 .xiangmu_detail .main .pic ul li img {
             width: 100%;
             height: 100%; }
+
+.S_login .login_yemian .main, .S_login .register_yemian .main, .S_register .login_yemian .main, .S_register .register_yemian .main {
+  width: 100%;
+  margin-top: 2.4375rem;
+  height: 15.208333rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .S_login .login_yemian .main div, .S_login .register_yemian .main div, .S_register .login_yemian .main div, .S_register .register_yemian .main div {
+    margin-top: 0.875rem;
+    width: 89.33%;
+    height: 3.291666rem; }
+    .S_login .login_yemian .main div input, .S_login .register_yemian .main div input, .S_register .login_yemian .main div input, .S_register .register_yemian .main div input {
+      padding-left: 0.816666rem;
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: #f3f5f7;
+      border-radius: 0.6125rem;
+      background-size: 100%;
+      font-size: 0.833333rem; }
+  .S_login .login_yemian .main #login, .S_login .login_yemian .main #register, .S_login .register_yemian .main #login, .S_login .register_yemian .main #register, .S_register .login_yemian .main #login, .S_register .login_yemian .main #register, .S_register .register_yemian .main #login, .S_register .register_yemian .main #register {
+    text-align: center;
+    line-height: 3.291666rem;
+    background-color: #b4292e;
+    border-radius: 0.416666rem;
+    color: white; }
+
+.S_wode .self {
+  width: 100%;
+  height: 6.25rem; }
+  .S_wode .self #yonghu {
+    width: 100%;
+    height: 6.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .S_wode .self #yonghu a {
+      color: white;
+      width: 4.166666rem;
+      display: block;
+      height: 2.125rem;
+      text-align: center;
+      background-color: #ff4234;
+      line-height: 2.125rem;
+      margin-left: 1.041666rem;
+      border-radius: 0.416666rem; }
+  .S_wode .self #yonghu_active {
+    width: 100%;
+    height: 6.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .S_wode .self #yonghu_active span {
+      color: orange;
+      width: 5.166666rem;
+      display: block;
+      height: 2.125rem;
+      text-align: center;
+      line-height: 2.125rem; }
+
+.S_wode .pic_main {
+  width: 100%; }
+  .S_wode .pic_main .pic {
+    width: 100%; }
+    .S_wode .pic_main .pic img {
+      width: 100%; }
+
+.S_wode .removelogin {
+  margin-top: 1.041666rem;
+  width: 100%;
+  height: 3.125rem;
+  display: flex;
+  justify-content: center; }
+  .S_wode .removelogin a {
+    display: block;
+    background: #ff4234;
+    width: 90%;
+    color: white;
+    text-align: center;
+    line-height: 3.125rem;
+    height: 3.125rem;
+    border-radius: 0.433333rem; }
+
+.S_faxian .lunbos {
+  height: 7.895833rem; }
+  .S_faxian .lunbos img {
+    width: 100%;
+    height: 100%; }
+
+.S_faxian .faxian_nav {
+  background: white;
+  width: 100%;
+  height: 5.458333rem;
+  display: flex; }
+  .S_faxian .faxian_nav a {
+    display: block;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    font-size: 0.791666rem;
+    color: #868686; }
+    .S_faxian .faxian_nav a i {
+      display: block;
+      height: 4.166666rem; }
+    .S_faxian .faxian_nav a:nth-child(1) i {
+      background: url(../img/icons/find_help_center_icon.png) no-repeat center center;
+      background-size: 40%; }
+    .S_faxian .faxian_nav a:nth-child(2) i {
+      background: url(../img/icons/find_pingtai_notice_icon.png) no-repeat center center;
+      background-size: 40%; }
+    .S_faxian .faxian_nav a:nth-child(3) i {
+      background: url(../img/icons/find_mtbd_icon.png) no-repeat center center;
+      background-size: 40%; }
+    .S_faxian .faxian_nav a:nth-child(4) i {
+      background: url(../img/icons/find_about_wx_icon.png) no-repeat center center;
+      background-size: 40%; }
+
+.S_faxian .licai {
+  margin-top: 0.416666rem;
+  width: 100%;
+  height: 3.333333rem; }
+  .S_faxian .licai img {
+    width: 100%;
+    height: 100%; }
+
+.S_faxian .newss {
+  width: 100%;
+  height: 7.979166rem;
+  display: flex;
+  background: white; }
+  .S_faxian .newss .news_left {
+    width: 57.3%;
+    height: 100%;
+    padding: 0.6875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .S_faxian .newss .news_left h3 {
+      font-size: 0.958333rem;
+      height: 1.85rem;
+      line-height: 1.85rem; }
+    .S_faxian .newss .news_left .bottom {
+      height: 1.5625rem;
+      width: 100%;
+      line-height: 1.5625rem;
+      display: flex; }
+      .S_faxian .newss .news_left .bottom .bottom_left {
+        width: 45%; }
+      .S_faxian .newss .news_left .bottom .bottom_right {
+        width: 55%; }
+        .S_faxian .newss .news_left .bottom .bottom_right .dianzan {
+          padding: 0 1.105rem;
+          background: url(../img/icons/find_zan_white_icon.png) no-repeat left center;
+          background-size: 40%; }
+        .S_faxian .newss .news_left .bottom .bottom_right .liulan {
+          padding: 0 1.105rem;
+          background: url(../img/icons/find_has_see_icon.png) no-repeat left center;
+          background-size: 30%; }
+  .S_faxian .newss .newss_a {
+    display: block;
+    width: 42.7%;
+    height: 100%; }
+    .S_faxian .newss .newss_a .news_right {
+      width: 100%;
+      height: 100%;
+      padding: 0.6875rem; }
+      .S_faxian .newss .newss_a .news_right img {
+        width: 100%;
+        height: 100%; }
+
+.licai_h {
+  width: 100%;
+  height: 8.304166rem; }
+  .licai_h .top {
+    height: 4.916666rem;
+    width: 100%;
+    padding: 0 0.816666rem; }
+    .licai_h .top h3 {
+      height: 2.25rem;
+      line-height: 2.25rem;
+      font-size: 1.154166rem; }
+  .licai_h .bottom {
+    padding: 0 0.816666rem;
+    width: 100%;
+    height: 3.354166rem;
+    line-height: 3.354166rem;
+    display: flex;
+    color: #999999;
+    font-size: 0.916666rem; }
+    .licai_h .bottom .left {
+      width: 70%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      height: 3.354166rem;
+      line-height: 3.354166rem; }
+      .licai_h .bottom .left .date0 {
+        width: 30%; }
+      .licai_h .bottom .left .author {
+        width: 50%; }
+    .licai_h .bottom .right {
+      width: 30%; }
+      .licai_h .bottom .right .dianzan {
+        padding: 0 1.105rem;
+        background: url(../img/icons/find_zan_white_icon.png) no-repeat left center;
+        background-size: 40%; }
+      .licai_h .bottom .right .liulan {
+        padding: 0 1.105rem;
+        background: url(../img/icons/find_has_see_icon.png) no-repeat left center;
+        background-size: 30%; }
+
+.pic_main {
+  width: 100%;
+  padding: 0 0.816666rem; }
+  .pic_main img {
+    width: 100%; }
+
+.qiantao .box.ng-enter {
+  transform: translate3D(100%, 0, 0); }
+
+.qiantao .box.ng-enter-active {
+  transform: translate3D(0, 0, 0); }
+
+.qiantao .box.ng-leave {
+  display: none; }
